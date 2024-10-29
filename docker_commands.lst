@@ -1,0 +1,23 @@
+ 1339  docker pull acrmapfredevops.azurecr.io/mapfre/cloud/cloudops-jenkins-agent-base:latest
+ 1340  docker run -ti --rm --entrypoint="" acrmapfredevops.azurecr.io/mapfre/cloud/cloudops-jenkins-agent-base:latest bash
+ 5985  docker pull acrmapfredevops.azurecr.io/mapfre/cloud/cloudops-jenkins-agent-aws:latest
+ 5986  docker run -ti --rm --entrypoint="" acrmapfredevops.azurecr.io/mapfre/cloud/cloudops-jenkins-agent-aws:latest bash
+ 6662  docker
+ 6663  docker run -it -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes jupyter/scipy-notebook
+ 8017  docker -h
+ 9621  docker pull localstack/localstack
+11141* DOCKER_BUILDKIT=0 docker build -t crewai-1 --no-cache .
+11142* docker run -v $(pwd):/app -ti --rm -d crewai-1 bash
+11143* docker exec -ti crew-ai bash
+11144* docker exec -ti crewai-1 bash
+11145* docker ps -a
+11146* docker exec -ti crewai-1 bash
+11147* docker ps -a
+11148* docker images
+11149* docker run -v $(pwd):/app -ti --rm -d crewai-1 bash
+11150* docker ps -a
+11151* docker container prune
+11152* docker ps -a
+11153* docker exec -ti ca bash
+11230  docker ps -a
+11231  history | grep docker
