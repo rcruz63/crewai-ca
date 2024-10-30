@@ -120,8 +120,9 @@ crew = Crew(
 ruta = ("Visita a Roma. "
         "Salida el 19 de Diciembre a las 9:00h. desde Madrid "
         "y regreso el 23 de Diciembre a las 22:00h. desde Roma. "
+        "Nuestro Hotel es Leonardo Boutique Hotel Rome Termini"
         "No pueden faltar la Fontana di Trevi, el Coliseo, "
-        "El Panteón, La plaza Narvona, "
+        "El Panteón, La plaza Navona, "
         "el Vaticano, El Moises de Miguel Angel y la Plaza de España. ")
 
 result = crew.kickoff(inputs={"topic": ruta})
