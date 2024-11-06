@@ -21,3 +21,4 @@
 11153* docker exec -ti ca bash
 11230  docker ps -a
 11231  history | grep docker
+docker stop reverent_chatelet -> Parar un contenedor que vemos con ps -a

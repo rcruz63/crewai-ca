@@ -48,13 +48,13 @@ presenter = Agent(
 search_task = Task(
     description=(
         "1. Busca y selecciona los puntos de mayor interés turístico en {topic}, "
-            "asegurando que cubran las principales atracciones del destino.\n"
+        "asegurando que cubran las principales atracciones del destino.\n"
         "2. Selecciona los mejores restaurantes y lugares donde comer, con un enfoque "
-            "en opciones económicas, pero de buena calidad, salvo que en el '{topic}' se indique otra preferencia.\n"
+        "en opciones económicas, pero de buena calidad, salvo que en el '{topic}' se indique otra preferencia.\n"
         "3. Identifica sitios secretos o menos conocidos que puedan hacer el viaje especial, "
-            "añadiendo un toque único a la experiencia.\n"
+        "añadiendo un toque único a la experiencia.\n"
         "4. Proporciona una opción principal y al menos una alternativa tanto para visitas turísticas "
-            "como para lugares donde comer o cenar."
+        "como para lugares donde comer o cenar."
     ),
     expected_output="Una lista de recomendaciones que incluya lugares de interés turístico, "
                     "restaurantes con buena relación calidad-precio, y sitios secretos o curiosos, "
@@ -65,15 +65,15 @@ search_task = Task(
 plan_task = Task(
     description=(
         "1. Organiza las recomendaciones del Buscador en un itinerario diario, "
-            "asegurándote de minimizar los desplazamientos innecesarios entre los puntos de interés.\n"
+        "asegurándote de minimizar los desplazamientos innecesarios entre los puntos de interés.\n"
         "2. Agrupa las visitas y actividades por cercanía geográfica, "
-            "y cuando sea posible, por relación temática para mejorar la experiencia del viaje.\n"
+        "y cuando sea posible, por relación temática para mejorar la experiencia del viaje.\n"
         "3. Ajusta el itinerario para que encaje con la duración del viaje y el tiempo disponible, "
-            "respetando los horarios de llegada y partida.\n"
+        "respetando los horarios de llegada y partida.\n"
         "4. Incluye al menos un lugar para comer y otro para cenar cada día, "
-            "según las recomendaciones del Buscador.\n"
+        "según las recomendaciones del Buscador.\n"
         "5. Proporciona alternativas cuando sea posible, tanto en visitas como en opciones de comida y cena, "
-            "para ofrecer flexibilidad al viajero.\n"
+        "para ofrecer flexibilidad al viajero.\n"
         "6. Proporciona un itinerario equilibrado, evitando que las jornadas sean demasiado intensas o desorganizadas."
     ),
     expected_output="Un itinerario diario optimizado y equilibrado, que incluya las actividades principales, "
@@ -85,15 +85,15 @@ plan_task = Task(
 present_task = Task(
     description=(
         "1. Presenta el itinerario organizado por el Planificador en formato markdown, "
-            "dividiendo el plan por días y actividades, sin incluir horarios estrictos.\n"
+        "dividiendo el plan por días y actividades, sin incluir horarios estrictos.\n"
         "2. Escribe descripciones breves, cálidas y en un lenguaje cercano y amigable, "
-            "como si recomendaras el viaje a un amigo.\n"
+        "como si recomendaras el viaje a un amigo.\n"
         "3. Incluye una breve explicación de por qué cada actividad o lugar vale la pena visitar, "
-            "haciendo que suene atractivo y especial.\n"
+        "haciendo que suene atractivo y especial.\n"
         "4. Ofrece las alternativas proporcionadas por el Planificador de forma amena, "
-            "presentándolas como opciones adicionales para flexibilizar el viaje.\n"
+        "presentándolas como opciones adicionales para flexibilizar el viaje.\n"
         "5. Mantén el tono simpático y cercano en todo momento, asegurándote de que el viajero "
-            "se sienta motivado a seguir el plan."
+        "se sienta motivado a seguir el plan."
     ),
     expected_output="Un itinerario atractivo en formato markdown, organizado por días, con descripciones breves, "
                     "cercanas y cálidas, que incluyan las actividades principales y alternativas si las hay.",
